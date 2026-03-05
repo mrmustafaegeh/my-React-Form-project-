@@ -1,10 +1,10 @@
-import './App.css';
-import Form from './Form';
+import Form from "./Components/Form";
+import "./App.css"; 
 
 function App() {
   return (
-    <div className="App" style={{marginTop:'250px'}}>
-      <Form/>
+    <div>
+      <Form />
     </div>
   );
 }

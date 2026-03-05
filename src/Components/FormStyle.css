@@ -1,0 +1,126 @@
+/* Reset & full height for flex container */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #0a0035; /* dark background */
+  font-family: Arial, sans-serif;
+}
+
+/* Flex wrapper centers the form */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Form styles */
+#loan-Form {
+  background: rgb(51, 0, 170);
+  color: white;
+  border-radius: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 450px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Headings and horizontal line */
+#loan-Form h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+#loan-Form hr {
+  border: none;
+  height: 1px;
+  background: white;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+#loan-Form label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Inputs and select */
+#loan-Form input[type="text"],
+#loan-Form input[type="number"],
+#loan-Form select {
+  width: 100%;
+  height: 40px;
+  padding: 7px 12px;
+  border-radius: 8px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+/* Checkbox styling - small */
+#loan-Form input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-top: 5px;
+}
+
+/* Submit button */
+.submit-btn {
+  margin-top: 25px;
+  width: 100%;
+  background-color: rgb(238, 10, 146);
+  border: none;
+  padding: 12px 0;
+  border-radius: 12px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+/* Disabled button style */
+.submit-btn.disabled,
+.submit-btn:disabled {
+  background-color: rgba(238, 10, 146, 0.6);
+  cursor: not-allowed;
+}
+
+/* Button hover */
+.submit-btn:not(:disabled):hover {
+  background-color: rgb(200, 0, 120);
+}
+
+/* Modal background */
+#model {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+/* Modal content */
+#model-content {
+  background: white;
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  color: green;
+  text-align: center;
+  max-width: 350px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  user-select: none;
+}
